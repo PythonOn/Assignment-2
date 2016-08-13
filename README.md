@@ -78,44 +78,46 @@ result = add(a, b)
 
 ## Questions
 
-1. Write a function which returns max of 2 numbers. We can use if, elif and else, right?
+1.  Write a function which returns max of 2 numbers. We can use if, elif and else, right?
 2.  Find the output - Concept of local and global variables
-```
-a = 60
-def func(z):
+  ```
+  a = 60
+  def func(z):
     print("z = ", z)
     a = 2
     print('Changed local a to', a)
-func(a)
-print('Global a is still', a)
-```
-3. What  is the use of id(), print() function in python? You know the interpreter trick!
-4. What's the output: 
+  func(a)
+  print('Global a is still', a)
+  ```
 
-```
-def cube(x):
+3.  What  is the use of id(), print() function in python? You know the interpreter trick!
+4.  What's the output: 
+
+  ```
+  def cube(x):
     return x * x * x   
  
-x = cube(3)    
-print x
-```
-5. Lets find the output , again! :smiley:
-```
-def foo(k):
+  x = cube(3)    
+  print x
+  ```
+5.  Lets find the output , again! :smiley:
+  ```
+  def foo(k):
     k[0] = 1
-q = [0]
-foo(q)
-print(q)
-```
-6. Try this, find output?
-```
-def foo(i, x=[]):
+  
+  q = [0] 
+  foo(q)
+  print(q)
+  ```
+6.  Try this, find output?
+  ```
+  def foo(i, x=[]):
     x.append(x.append(i))
     return x
-for i in range(3):
+  for i in range(3):
     y = foo(i)
-print(y)
-```
+  print(y)
+  ```
 
 - The trick for solving 'find the output' questions is to NOT think how the program wants to you to think.  DON'T proceed with any notion of how that program is *supposed* to work, find out how that program will *exactly* work. 
 
