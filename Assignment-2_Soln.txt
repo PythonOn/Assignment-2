@@ -1,0 +1,74 @@
+Questions
+
+Write a function which returns max of 2 numbers. We can use if, elif and else, right?
+Find the output - Concept of local and global variables
+
+a = 60
+def func(z):
+  print("z = ", z)
+  a = 2
+  print('Changed local a to', a)
+func(a)
+print('Global a is still', a)
+What is the use of id(), print() function in python? You know the interpreter trick!
+
+What's the output:
+
+def cube(x):
+  return x * x * x   
+
+x = cube(3)    
+print x
+Lets find the output , again! :smiley:
+
+def foo(k):
+  k[0] = 1
+
+q = [0] 
+foo(q)
+print(q)
+Try this, find output?
+
+def foo(i, x=[]):
+  x.append(x.append(i))
+  return x
+for i in range(3):
+  y = foo(i)
+print(y)
+
+
+Answers
+
+1. Answer
+
+def maxno(a,b):
+    if(a>b)
+        return a
+    else
+        return b
+2. Answer
+
+z =  60
+Changed local a to 2
+Global a is still 60
+
+3. Answer
+
+id() returns the identity of an object.
+print() prints the values to a stream.
+
+4.Answer
+
+27
+
+5. Answer
+
+[1]
+
+6. Answer
+
+[0, None, 1, None, 2, None]
+
+
+
+
